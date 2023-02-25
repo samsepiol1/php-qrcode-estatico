@@ -23,6 +23,6 @@ pagamento.
 Conforme especificado no Manual do BR Code, o Pix precisa definir seu GUI (identificador único do
 arranjo) para ser utilizado ao longo dos IDs 
 
-| GUI Do Pix | Valor |
-|------|-----------|
-| GUI - Globally Unique Identifier |   br.gov.bcb.pix     |
+| GUI Do Pix | Valor | Tamanho
+|------|-----------|-----------
+| GUI - Globally Unique Identifier |   br.gov.bcb.pix     | 14 Caracteres
