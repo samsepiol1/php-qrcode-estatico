@@ -41,6 +41,21 @@ O QR Code estático no Pix conterá o seguinte conjunto de informações:
 |63|  CRC 16  | 04 | 0x1D3D – incluindo “6304” (ID 63 e tamanho 04)
 
 Em nosso código PHP adicionamos o ID em constantes:
-
+```php
+    const ID_PAYLOAD_FORMAT_INDICATOR = '00';
+    const ID_MERCHANT_ACCOUNT_INFORMATION = '26';
+    const ID_MERCHANT_ACCOUNT_INFORMATION_GUI = '00';
+    const ID_MERCHANT_ACCOUNT_INFORMATION_KEY = '01';
+    const ID_MERCHANT_ACCOUNT_INFORMATION_DESCRIPTION = '02';
+    const ID_MERCHANT_CATEGORY_CODE = '52';
+    const ID_TRANSACTION_CURRENCY = '53';
+    const ID_TRANSACTION_AMOUNT = '54';
+    const ID_COUNTRY_CODE = '58';
+    const ID_MERCHANT_NAME = '59';
+    const ID_MERCHANT_CITY = '60';
+    const ID_ADDITIONAL_DATA_FIELD_TEMPLATE = '62';
+    const ID_ADDITIONAL_DATA_FIELD_TEMPLATE_TXID = '05';
+    const ID_CRC16 = '63';
+```
 
 
