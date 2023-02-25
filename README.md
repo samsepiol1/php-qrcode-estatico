@@ -26,3 +26,18 @@ arranjo) para ser utilizado ao longo dos IDs
 | GUI Do Pix | Valor | Tamanho
 |------|-----------|-----------
 | GUI - Globally Unique Identifier |   br.gov.bcb.pix     | 14 Caracteres
+
+O QR Code estático no Pix conterá o seguinte conjunto de informações:
+| ID | Nome BR Code | Tamanho | Valor
+|------|-----------|-----------|-----------
+| 00|  Payload Format Indicator   | 02 | 01
+| 26|  Merchant Account Information   | 58 | GUI + Chave
+| 52|  Merchant Category Code  | 04 | 0000
+| 53|  Transaction Currency   | 03 | 986
+| 58|  Country Code  | 02 | BR
+| 59|  Merchant Name  | 13 | Fulano de Tal
+| 60|  Merchant City  | 08 | Brasilia
+| 62|  Aditional Field Data Template  | 02 | ID + nome + tamanho + valor
+|62|  CRC 16  | 04 | 0x1D3D – incluindo “6304” (ID 63 e tamanho 04)
+
+
