@@ -1,5 +1,5 @@
 <center><h2>Pix QRCode Estático - PHP</h2></center>
-<p align="center"><a href="https://nintendo.com" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Logo%E2%80%94pix_powered_by_Banco_Central_%28Brazil%2C_2020%29.svg/2560px-Logo%E2%80%94pix_powered_by_Banco_Central_%28Brazil%2C_2020%29.svg.png" width="400" alt="Nintendo Logo"></a></p>
+<p align="center"><a href="https://nintendo.com" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Logo%E2%80%94pix_powered_by_Banco_Central_%28Brazil%2C_2020%29.svg/2560px-Logo%E2%80%94pix_powered_by_Banco_Central_%28Brazil%2C_2020%29.svg.png" width="400" alt="Pix Logo"></a></p>
 
 ## PIX
 Pix é um modo de transferência monetária instantâneo e de pagamento eletrônico instantâneo em real brasileiro, oferecido pelo Banco Central do Brasil a pessoas físicas e jurídicas, que funciona 24 horas, ininterruptamente, sendo o mais recente meio de pagamento do Sistema de Pagamentos Brasileiro.
@@ -39,5 +39,8 @@ O QR Code estático no Pix conterá o seguinte conjunto de informações:
 | 60|  Merchant City  | 08 | Brasilia
 | 62|  Aditional Field Data Template  | 07 | ID + nome + tamanho + valor
 |63|  CRC 16  | 04 | 0x1D3D – incluindo “6304” (ID 63 e tamanho 04)
+
+Em nosso código PHP adicionamos o ID em constantes:
+
 
 
