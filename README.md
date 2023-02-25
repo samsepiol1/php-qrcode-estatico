@@ -7,9 +7,7 @@ Pix é um modo de transferência monetária instantâneo e de pagamento eletrôn
 ## PIX e QRCode
 O QR Code dinâmico e o QR Code estático, enquanto mecanismos para envio ou disponibilização prévia
 de informações para fins de iniciação de um Pix, seguirão o padrão do BR Code, nos termos do Manual
-do BR Code1
-. Nesses casos, o usuário recebedor disponibiliza os dados de pagamento em um QR Code,
-para ser capturado por imagem pelo usuário pagador.
+do BR Code1. Nesses casos, o usuário recebedor disponibiliza os dados de pagamento em um QR Code, para ser capturado por imagem pelo usuário pagador.
 Podem atuar na emissão de QR Code o prestador de serviços de pagamento (PSP) do recebedor, a
 Secretaria do Tesouro Nacional (STN) e, em casos de uso específicos, órgãos do governo federal2
 ,
