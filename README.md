@@ -58,4 +58,33 @@ Em nosso código PHP adicionamos o ID em constantes:
     const ID_CRC16 = '63';
 ```
 
+## CRC16
+O CRC16 é usado para verificar se os dados enviados na transação foram corrompidos ou alterados durante a transmissão. Se houver alguma discrepância no código CRC16 recebido, a transação é considerada inválida e não é processada. em nosso código utilizamos o seguinte metódo para Calculo do CRC16 com constantes hexadecimal que são definidas pela documentação do PIX
+
+```php
+ private function getCRC16($payload) {
+        //ADICIONA DADOS GERAIS NO PAYLOAD
+        $payload .= self::ID_CRC16.'04';
+  
+        //DADOS DEFINIDOS PELO BACEN
+        $polinomio = 0x1021;
+        $resultado = 0xFFFF;
+  
+        //CHECKSUM
+        if (($length = strlen($payload)) > 0) {
+            for ($offset = 0; $offset < $length; $offset++) {
+                $resultado ^= (ord($payload[$offset]) << 8);
+                for ($bitwise = 0; $bitwise < 8; $bitwise++) {
+                    if (($resultado <<= 1) & 0x10000) $resultado ^= $polinomio;
+                    $resultado &= 0xFFFF;
+                }
+            }
+        }
+  
+        //RETORNA CÓDIGO CRC16 DE 4 CARACTERES
+        return self::ID_CRC16.'04'.strtoupper(dechex($resultado));
+    }
+```
+
+
 
