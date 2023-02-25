@@ -19,6 +19,12 @@ utilizado para a leitura do QR Code, acessará o backend4 do PSP do pagador, que
 pagamento.
 
 ## Definições Gerais do BRCode
-| GUI do PIX | Valor |Tamanho|
-|------|-----------| 
-| 0x0 | Source | |     14 caracteres   
+
+| Offset | Description |
+|------|-----------|
+| 0x0 |   Source     |
+| 0x1|   Destination |
+| 0x2 |  Type and Flags    |
+| 0x4 |  Session ID    |
+| 0x5 |  Packet signature    |
+| 0x9 |  Sequence ID     |
