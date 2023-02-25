@@ -37,7 +37,7 @@ O QR Code estático no Pix conterá o seguinte conjunto de informações:
 | 58|  Country Code  | 02 | BR
 | 59|  Merchant Name  | 13 | Fulano de Tal
 | 60|  Merchant City  | 08 | Brasilia
-| 62|  Aditional Field Data Template  | 02 | ID + nome + tamanho + valor
+| 62|  Aditional Field Data Template  | 07 | ID + nome + tamanho + valor
 |62|  CRC 16  | 04 | 0x1D3D – incluindo “6304” (ID 63 e tamanho 04)
 
 
