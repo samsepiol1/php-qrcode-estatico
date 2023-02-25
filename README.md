@@ -20,5 +20,5 @@ pagamento.
 
 ## Definições Gerais do BRCode
 | GUI do PIX | Valor |Tamanho|
-|------|-----------| |-----------|
-| 0x0 | Source | |     14 caracteres        |
+|------|-----------| 
+| 0x0 | Source | |     14 caracteres   
