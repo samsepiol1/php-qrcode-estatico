@@ -20,11 +20,9 @@ pagamento.
 
 ## Definições Gerais do BRCode
 
-| Offset | Description |
+Conforme especificado no Manual do BR Code, o Pix precisa definir seu GUI (identificador único do
+arranjo) para ser utilizado ao longo dos IDs 
+
+| GUI Do Pix | Valor |
 |------|-----------|
-| 0x0 |   Source     |
-| 0x1|   Destination |
-| 0x2 |  Type and Flags    |
-| 0x4 |  Session ID    |
-| 0x5 |  Packet signature    |
-| 0x9 |  Sequence ID     |
+| GUI - Globally Unique Identifier |   br.gov.bcb.pix     |
