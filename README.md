@@ -17,3 +17,8 @@ do Sisbacen e que apresentem a certificação de segurança requerida para essa 
 O aplicativo do PSP do usuário pagador, que deve estar instalado em seu dispositivo móvel e que é
 utilizado para a leitura do QR Code, acessará o backend4 do PSP do pagador, que gera a ordem de
 pagamento.
+
+## Definições Gerais do BRCode
+| GUI do PIX | Valor |Tamanho|
+|------|-----------| |-----------|
+| 0x0 | Source | |     14 caracteres        |
